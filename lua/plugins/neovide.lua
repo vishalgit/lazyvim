@@ -2,8 +2,8 @@
 
 return {
   {
-    dir = '.',
-    name = 'neovide-config',
+    dir = ".",
+    name = "neovide-config",
     lazy = false,
     cond = vim.g.neovide, -- only load in neovide
     init = function()
@@ -13,6 +13,7 @@ return {
       vim.g.neovide_position_animation_length = 0
       vim.g.neovide_cursor_animate_command_line = false
       vim.g.neovide_cursor_animate_in_insert_mode = false
+      vim.o.guifont = "JetBrainsMono Nerd Font:h20"
     end,
   },
 }
